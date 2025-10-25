@@ -1,64 +1,4 @@
-@import url("./style/home.css");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lora", "Poppins", sans-serif, serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-:root {
-  /* theme colors */
-  --navy: #1A2A4B;
-  --white: #FFFFFF;
-  --light-navy: #233554;
-  --lightest-navy: #303C6C;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --radial-bg-color: radial-gradient(circle at center, #f4e8ff 0%, #d9c9ff 60%, #a88cff 100%);
-  --dark-purple: #2d005f;
-  --purple: #6b00ff;
-  --hover-purple: #5800cc;
-  --navbar-shadow: rgba(0, 0, 0, 0.05);
-  --hero-heading: #2e005f;
-  --grayish: #555;
-
-  /* imported colors */
-  --very-light-gray: rgb(211, 211, 211, 1.2);
-  --purple: rgb(148, 61, 148);
-  --light-gray: rgb(211, 211, 211);
-  --very-light-gray: rgb(248, 247, 247);
-  --gray: rgb(121, 117, 117);
-  --white: rgb(255, 255, 255);
-  --orange: rgb(255, 165, 0);
-  --whitesmoke: rgb(245, 245, 245);
-  --greenyellow: rgb(173, 255, 47);
-  --black: rgb(0, 0, 0);
-  --very-dark-gray: #2c3e50;
-  --red: rgb(255, 0, 0);
-  --lightgreen: rgb(144, 238, 144);
-  --darkgreen: rgb(0, 100, 0);
-  --skyblue: rgb(135, 206, 235);
-  --blue: rgb(0, 0, 255);
-  --lightblue: rgb(173, 216, 230);
-  --very-dark-blue: rgb(0, 0, 128);
-  --darkslategray: rgb(47, 79, 79);
-  --loader-bg-color: rgba(101, 98, 98, 0.5);
-  --assign-btn-color: rgb(0, 0, 255, 0.1);
-  --navy: rgb(0, 0, 128);
-  --lightcyan: rgb(224, 255, 255);
-  --transparent: transparent;
-  --sidebar-item-shadow-color: rgb(248, 248, 215);
-  --submit-btn-hover-color: rgba(245, 226, 226, 0.5);
-  --signin-signup-color: rgb(129, 118, 118, 0.6);
-  --navbar-bg-color: rgba(0, 0, 0, 0.5);
-  --light-navy-color: rgb(0, 0, 128, 0.2);
-  --navbar-blue-color: rgba(0, 0, 128, 0.5);
-}
-
-/* .card {
+.card {
   padding: 2rem;
   box-shadow: 1px 1px 1px 1px var(--navy-shadow);
 }
@@ -82,11 +22,11 @@
   color: var(--dark-purple);
   text-align: center;
   min-height: 100vh;
-} */
+}
 
 
 /* Navbar */
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,10 +70,10 @@
 
 .auth-buttons .register:hover {
   background: var(--hover-purple);
-} */
+}
 
 /* Hero Section */
-/* .hero {
+.hero {
   padding: 8rem 2rem;
 }
 
@@ -192,10 +132,10 @@
 
 .secondary:hover {
   background: #f3e8ff;
-} */
+}
 
 /* Features */
-/* .features {
+.features {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -217,4 +157,4 @@
 
 .features a:hover {
   color: var(--purple);
-} */
+}
