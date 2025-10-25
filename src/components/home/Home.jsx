@@ -1,8 +1,13 @@
 import React from 'react';
 import '../../index.css';
 import Logo from '../../assets/CRM Platform Logo.png';
+import { useNavigate } from 'react-router';
 
 const Home = () => {
+    const navigator = useNavigate();
+    const navigateToSignupPage = () => {
+        navigator('/signup');
+    }
     return <>
         <div className="home">
             <header class="top-bar">
@@ -19,7 +24,7 @@ const Home = () => {
                     </nav>
                     <div class="auth-buttons">
                         <button class="login">Login</button>
-                        <button class="register">Register</button>
+                        <button class="register" onClick={() => navigateToSignupPage()}>Register</button>
                     </div>
                 </div>
             </header>

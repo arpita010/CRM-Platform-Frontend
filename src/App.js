@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router';
-import './App.css';
+import './index.css';
 import Home from './components/home/Home';
+import Signup from './components/signup/Signup';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </>
