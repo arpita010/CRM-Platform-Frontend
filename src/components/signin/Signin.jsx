@@ -4,46 +4,51 @@ import { useNavigate } from 'react-router';
 import Logo from '../../assets/CRM Platform Logo.png';
 
 const Signin = () => {
+    const navigator = useNavigate();
+    const navigate = (path) => {
+        console.log("Navigating to: ", path);
+        navigator(path);
+    }
     return <>
-        <nav class="navbar-signin">
-            <div class="logo-signin">
+        <nav className="navbar-signin">
+            <div className="logo-signin">
                 <img src={Logo} alt="Logo" />
                 {/* <span>CRM Platform</span> */}
             </div>
-            <div class="nav-links-signin">
+            <div className="nav-links-signin">
                 <a href="#">Products</a>
-                <button class="login-signin">Login</button>
-                <button class="register-signin">Register</button>
+                <button className="login-signin" onClick={() => navigate('/signin')}>Login</button>
+                <button className="register-signin" onClick={() => navigate("/signup")}>Register</button>
             </div>
         </nav>
 
         <main>
-            <div class="login-container">
+            <div className="login-container">
                 <h2>Welcome to CRM Platform</h2>
-                <p class="subtext-signin">Please login to continue</p>
+                <p className="subtext-signin">Please login to continue</p>
 
                 <form className='signin-form'>
-                    <label for="email" className='signin-form-label'>Email<span class="required">*</span></label>
+                    <label htmlFor="email" className='signin-form-label'>Email<span className="required">*</span></label>
                     <input type="email" id="email" placeholder="Email Address" required className='signin-input' />
 
-                    <label for="password" className='signin-form-label'>Password<span class="required">*</span></label>
-                    <div class="password-wrapper">
+                    <label htmlFor="password" className='signin-form-label'>Password<span className="required">*</span></label>
+                    <div className="password-wrapper">
                         <input type="password" id="password" required className='signin-input' />
                         {/* <span class="eye-icon">👁️</span> */}
                     </div>
 
-                    <a href="#" class="forgot-link">Forgot password?</a>
+                    <a href="#" className="forgot-link">Forgot password?</a>
 
-                    <button type="submit" class="login-btn">Login and Continue</button>
+                    <button type="submit" className="login-btn">Login and Continue</button>
                 </form>
 
-                <p class="help-text">
+                <p className="help-text">
                     Don’t have an account? <a href="/signup">Sign up now</a>
                 </p>
             </div>
 
-            <div class="footer-text-signin">
-                <div class="footer-links-signin">
+            <div className="footer-text-signin">
+                <div className="footer-links-signin">
                     <a href="#">Free Invoice Generator</a>
                     <a href="#">Estimate Templates</a>
                     <a href="#">Quotation Generator</a>
