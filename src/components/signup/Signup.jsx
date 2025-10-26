@@ -66,14 +66,14 @@ const Signup = () => {
                     </div>
 
                     <div class="terms">
-                        <input type="checkbox" checked />
+                        <input type="checkbox" />
                         <p>I agree to the <a href="#">T&C</a> and <a href="#">Privacy Policy</a></p>
                     </div>
 
                     <button type="submit" class="create-btn">Create Account</button>
 
                     <p class="login-text">
-                        Already a user? <a href="#">Login here</a>
+                        Already a user? <a href="/signin">Login here</a>
                     </p>
                 </form>
             </div>
