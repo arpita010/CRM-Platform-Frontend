@@ -10,6 +10,8 @@
 @import url('./style/userProfilePage.css');
 @import url('./style/userSettings.css');
 @import url('./style/personalSettings.css');
+@import url('./style/notificationSettingsPage.css');
+@import url('./style/notificationSection.css');
 
 * {
   margin: 0;
