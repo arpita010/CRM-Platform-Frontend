@@ -1,0 +1,13 @@
+.dashboard-main-content-section {
+  padding: 3rem 4rem;
+}
+
+.dashboard-main-content-section h2 {
+  margin-bottom: 2rem;
+}
+
+.dashboard-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}

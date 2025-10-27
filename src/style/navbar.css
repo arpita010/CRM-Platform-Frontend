@@ -1,0 +1,88 @@
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--purple);
+    padding: 1rem 2rem;
+    color: var(--white);
+    height: 4rem;
+}
+
+.main-navbar-left .main-logo-text {
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Account Manager section */
+.account-manager {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: var(--acc-manager-bg-color);
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    /* margin: 1rem; */
+}
+
+.profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+
+.manager-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.account-manager span {
+    display: block;
+    font-size: 0.6rem;
+    opacity: 0.9;
+}
+
+/* Icons */
+.main-navbar-icons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.main-navbar-icons button {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--white);
+    transition: 0.3s ease;
+}
+
+.main-navbar-icons button:hover {
+    transform: scale(1.2);
+}
+
+/* Book Demo Button */
+.book-demo {
+    background-color: var(--register-btn-bg);
+    border: none;
+    color: var(--white);
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.book-demo:hover {
+    background-color: var(--hover-red);
+}

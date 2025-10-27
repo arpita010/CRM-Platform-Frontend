@@ -1,0 +1,30 @@
+.main-sidebar {
+    width: 3rem;
+    background-color: var(--sidebar-bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 3rem;
+    border-right: 1px solid var(--sidebar-border-color);
+}
+
+.main-logo {
+    font-size: 24px;
+    background: var(--purple);
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu-item {
+    font-size: 2rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}

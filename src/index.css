@@ -1,7 +1,12 @@
 @import url("./style/home.css");
 @import url("./style/signup.css");
 @import url("./style/signin.css");
-
+@import url('./style/navbar.css');
+@import url('./style/dashboardPage.css');
+@import url('./style/sidebar.css');
+@import url('./style/card.css');
+@import url('./style/dashboard.css');
+@import url('./style/header.css');
 
 * {
   margin: 0;
@@ -30,7 +35,11 @@
   --video-bg-color: #4b1fad;
   --hover-purple: #5823b9;
   --register-btn-bg: #ff0077;
+  --hover-red: #e60073;
   --light-shadow: rgba(0, 0, 0, 0.1);
+  --sidebar-bg-color: #f6f3ff;
+  --sidebar-border-color: #e4e2ee;
+  --acc-manager-bg-color: rgba(255, 255, 255, 0.15);
 
   /* imported colors */
   --very-light-gray: rgb(211, 211, 211, 1.2);
