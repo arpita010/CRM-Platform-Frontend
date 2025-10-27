@@ -1,0 +1,83 @@
+.personal-settings {
+    padding: 3rem;
+    flex: 1;
+    overflow-y: auto;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .profile-section {
+        display: flex;
+        gap: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .profile-avatar {
+        text-align: center;
+    }
+
+    .avatar-circle {
+        width: 8rem;
+        height: 8rem;
+        background-color: var(--purple);
+        color: var(--white);
+        font-size: 3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    .avatar-circle.small {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .profile-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 70%;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    input,
+    select {
+        padding: 0.8rem;
+        border: 1px solid var(--sidebar-border-color);
+        border-radius: 0.5rem;
+        background-color: var(--input-bg-color);
+    }
+
+    .save-btn {
+        /* margin-top: 2rem; */
+        background-color: var(--light-purple);
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        color: var(--white);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .btn-section {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+    }
+}

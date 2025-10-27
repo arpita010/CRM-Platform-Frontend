@@ -1,0 +1,53 @@
+.user-settings {
+    display: flex;
+    flex: 1;
+    background-color: var(--white);
+    margin: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.settings-sidebar {
+    width: 20rem;
+    border-right: 1px solid #eee;
+    padding: 2rem;
+    background-color: var(--settings-bg-color);
+}
+
+.settings-sidebar h3 {
+    margin-bottom: 2rem;
+}
+
+.settings-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-sidebar li {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.settings-sidebar li.active,
+.settings-sidebar li:hover {
+    background-color: #f0e8ff;
+    color: var(--purple);
+}
+
+.business-settings {
+    position: absolute;
+    bottom: 2rem;
+}
+
+.business-settings button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid black;
+    background-color: var(--white);
+    color: #333;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}

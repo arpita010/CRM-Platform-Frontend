@@ -1,0 +1,12 @@
+.user-profile-app-container {
+    display: flex;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: var(--user-profile-bg-color);
+}
+
+.user-profile-main-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

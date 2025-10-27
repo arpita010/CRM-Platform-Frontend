@@ -7,6 +7,9 @@
 @import url('./style/card.css');
 @import url('./style/dashboard.css');
 @import url('./style/header.css');
+@import url('./style/userProfilePage.css');
+@import url('./style/userSettings.css');
+@import url('./style/personalSettings.css');
 
 * {
   margin: 0;
@@ -40,6 +43,10 @@
   --sidebar-bg-color: #f6f3ff;
   --sidebar-border-color: #e4e2ee;
   --acc-manager-bg-color: rgba(255, 255, 255, 0.15);
+  --input-bg-color: #f9f9f9;
+  --light-purple: #c7a8ff;
+  --user-profile-bg-color: #f8f9fc;
+  --settings-bg-color: #fafafa;
 
   /* imported colors */
   --very-light-gray: rgb(211, 211, 211, 1.2);
