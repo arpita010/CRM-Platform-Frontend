@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../index.css";
+import ToggleSwitch from "../commons/ToggleSwitch";
 
 
 const NotificationSection = ({ section, isActive, onToggle }) => {
@@ -7,8 +8,8 @@ const NotificationSection = ({ section, isActive, onToggle }) => {
 
     return (
         <div className="notification-section">
-            <div className="section-header" onClick={onToggle}>
-                <div className="section-left">
+            <div className="section-header" >
+                <div className="section-left" onClick={onToggle}>
                     <span className="dropdown-icon">{isActive ? "▾" : "▸"}</span>
                     <div>
                         <h3>{section.title}</h3>
@@ -16,17 +17,10 @@ const NotificationSection = ({ section, isActive, onToggle }) => {
                     </div>
                 </div>
                 <div className="toggle-container">
-                    <span>Enable All</span>
-                    <label className="switch">
-                        <input
-                            type="checkbox"
-                            checked={enabled}
-                            onChange={() => setEnabled(!enabled)}
-                        />
-                        <span className="slider"></span>
-                    </label>
+                    <ToggleSwitch />
                 </div>
             </div>
+
 
             {isActive && (
                 <div className="section-content">
@@ -37,10 +31,7 @@ const NotificationSection = ({ section, isActive, onToggle }) => {
                                     <h4>{item.name}</h4>
                                     <p>{item.desc}</p>
                                 </div>
-                                <label className="switch">
-                                    <input type="checkbox" defaultChecked />
-                                    <span className="slider"></span>
-                                </label>
+                                <ToggleSwitch />
                             </div>
                         ))
                     ) : (

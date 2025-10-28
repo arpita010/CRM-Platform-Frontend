@@ -1,14 +1,17 @@
 .user-settings {
-    display: flex;
-    flex: 1;
+    display: grid;
+    /* flex: 1; */
+    grid-template-columns: 1fr 3fr;
+    /* gap: 1rem; */
     background-color: var(--white);
-    margin: 2rem;
+    /* margin: 2rem; */
     border-radius: 1rem;
     overflow: hidden;
+    width: 100%;
 }
 
 .settings-sidebar {
-    width: 20rem;
+    /* width: 20rem; */
     border-right: 1px solid #eee;
     padding: 2rem;
     background-color: var(--settings-bg-color);
@@ -37,8 +40,8 @@
 }
 
 .business-settings {
-    position: absolute;
-    bottom: 2rem;
+    position: relative;
+    top: 4rem;
 }
 
 .business-settings button {
@@ -50,4 +53,9 @@
     border-radius: 0.5rem;
     cursor: pointer;
     font-weight: 600;
+}
+
+.settings-content {
+    /* border: 1px solid green; */
+    width: 100%;
 }

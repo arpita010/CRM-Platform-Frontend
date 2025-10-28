@@ -7,9 +7,10 @@ import UserSettings from "./UserSettings";
 const UserProfile = () => {
     return <>
         <div className="user-profile-app-container">
-            <Sidebar />
+            <Navbar />
+
             <div className="user-profile-main-section">
-                <Navbar />
+                <Sidebar />
                 <UserSettings />
             </div>
         </div>

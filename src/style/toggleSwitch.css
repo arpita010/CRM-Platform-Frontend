@@ -1,0 +1,28 @@
+.toggle-switch {
+    width: 50px;
+    height: 28px;
+    background-color: var(--toggle-off-color);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch.on {
+    background-color: var(--toggle-on-color);
+}
+
+.switch-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--toggle-circle-color);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-switch.on .switch-circle {
+    transform: translateX(22px);
+}

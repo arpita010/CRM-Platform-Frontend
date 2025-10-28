@@ -12,6 +12,7 @@
 @import url('./style/personalSettings.css');
 @import url('./style/notificationSettingsPage.css');
 @import url('./style/notificationSection.css');
+@import url('./style/toggleSwitch.css');
 
 * {
   margin: 0;
@@ -49,6 +50,10 @@
   --light-purple: #c7a8ff;
   --user-profile-bg-color: #f8f9fc;
   --settings-bg-color: #fafafa;
+
+  --toggle-on-color: #6c3dd9;
+  --toggle-off-color: #ccc;
+  --toggle-circle-color: #fff;
 
   /* imported colors */
   --very-light-gray: rgb(211, 211, 211, 1.2);
