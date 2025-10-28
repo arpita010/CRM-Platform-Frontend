@@ -1,0 +1,55 @@
+:root {
+    --font-color: #1f1f1f;
+    --summary-font-weight: 600;
+    --summary-hover-color: #2c2c2c;
+    --arrow-color: #1f1f1f;
+    --border-color: #e0e0e0;
+}
+
+.general-settings {
+    padding: 40px;
+    font-family: "Inter", sans-serif;
+    color: var(--font-color);
+
+    .settings-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .settings-section details {
+        border-bottom: 1px solid var(--border-color);
+        padding: 15px 0;
+    }
+
+    .settings-section summary {
+        font-size: 18px;
+        font-weight: var(--summary-font-weight);
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+
+    .settings-section summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .settings-section summary::before {
+        content: "▾";
+        font-size: 16px;
+        color: var(--arrow-color);
+        margin-right: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    .settings-section[open] summary::before,
+    .settings-section details[open] summary::before {
+        transform: rotate(180deg);
+    }
+
+    .settings-section summary:hover {
+        color: var(--summary-hover-color);
+    }
+}

@@ -1,0 +1,11 @@
+.business-settings-page-container {
+    background-color: var(--user-profile-bg-color);
+    display: grid;
+    grid-template-rows: 3rem 80rem;
+    gap: 1rem;
+}
+
+.business-settings-section {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+}

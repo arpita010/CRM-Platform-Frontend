@@ -16,6 +16,10 @@
 @import url('./style/passwordSecurity.css');
 @import url('./style/changePassword.css');
 @import url('./style/configurations.css');
+@import url('./style/businessSettingsPage.css');
+@import url('./style/businessSettings.css');
+@import url('./style/generalSettings.css');
+@import url('./style/subscriptionDesc.css');
 
 * {
   margin: 0;

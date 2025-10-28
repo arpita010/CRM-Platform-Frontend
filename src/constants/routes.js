@@ -1,3 +1,4 @@
+import BusinessSettingsPage from "../components/businessSettings/BusinessSettingsPage";
 import DashboardPage from "../components/dashboard/DashboardPage";
 import Home from "../components/home/Home";
 import Signin from "../components/signin/Signin";
@@ -25,6 +26,10 @@ const RoutesMap = [
         path: '/user/profile',
         component: <UserProfile />
     },
+    {
+        path: 'business/settings',
+        component: <BusinessSettingsPage />
+    }
 ];
 
 export default RoutesMap;

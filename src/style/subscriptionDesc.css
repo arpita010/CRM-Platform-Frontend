@@ -1,0 +1,101 @@
+:root {
+    --purple-color: #6c43f3;
+    --gray-border: #dcdcdc;
+    --light-bg: #f9f5ff;
+    --dark-bg: #181623;
+    --text-color: #4b4b4b;
+    --trial-bg: #eaf8ed;
+    --trial-text: #257a3e;
+}
+
+.subscription-container {
+    padding: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Tabs */
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid var(--gray-border);
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    background: #fff;
+    border: 1px solid var(--gray-border);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.tab-btn.active {
+    background: var(--light-bg);
+    color: var(--purple-color);
+    border-color: var(--purple-color);
+    font-weight: 500;
+}
+
+/* Subscription Card */
+.subscription-card {
+    border: 1px solid var(--gray-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.premium-banner {
+    background: var(--dark-bg);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.premium-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.premium-banner h2 {
+    background: linear-gradient(90deg, #f78f5c, #f0b83a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.subscription-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 50px;
+    background: white;
+}
+
+.label {
+    color: var(--text-color);
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.status-badge {
+    background: var(--trial-bg);
+    color: var(--trial-text);
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Billing Section */
+.billing-section {
+    padding: 40px;
+    border: 1px solid var(--gray-border);
+    border-radius: 8px;
+    text-align: center;
+    color: var(--text-color);
+}
