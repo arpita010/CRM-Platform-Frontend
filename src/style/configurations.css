@@ -1,0 +1,44 @@
+.language-container {
+    margin: 3rem 2rem;
+    padding: 2rem;
+
+
+    .language-selection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .language-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-text-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .language-subtitle {
+        font-size: 0.95rem;
+        color: var(--secondary-text-color);
+        margin-bottom: 2rem;
+        align-self: center;
+        padding: 1rem;
+    }
+
+    .language-select {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        color: var(--primary-text-color);
+        background-color: var(--input-bg);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: border-color 0.2s;
+    }
+
+    .language-select:focus {
+        outline: none;
+        border-color: var(--purple);
+    }
+}

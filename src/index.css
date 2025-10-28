@@ -15,6 +15,7 @@
 @import url('./style/toggleSwitch.css');
 @import url('./style/passwordSecurity.css');
 @import url('./style/changePassword.css');
+@import url('./style/configurations.css');
 
 * {
   margin: 0;
@@ -65,6 +66,12 @@
   --btn-hover-bg: #f9fafb;
   --gray-hover: #374151;
   --light-red-hover: #fee2e2;
+
+  --primary-text-color: #111827;
+  --secondary-text-color: #6b7280;
+  --border-color: #d1d5db;
+  --input-bg: #f9fafb;
+  --border-radius: 6px;
 
   /* imported colors */
   --very-light-gray: rgb(211, 211, 211, 1.2);
