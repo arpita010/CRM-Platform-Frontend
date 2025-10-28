@@ -3,6 +3,7 @@ import '../../index.css';
 import PersonalSettings from "./PersonalSettings";
 import { SettingsTab } from "../../constants/utils";
 import NotificationPage from "../notificationSettings/NotificationSettingsPage";
+import PasswordAndSecurityPage from "../passwordSecurity/PasswordAndSecurityPage";
 
 
 const UserSettings = () => {
@@ -19,7 +20,7 @@ const UserSettings = () => {
             case SettingsTab.NOTIFICATION_AND_ALERTS:
                 return <NotificationPage />;
             case SettingsTab.PASSWORD_AND_SECURITY:
-                return <div>Password & Security Settings Component</div>;
+                return <PasswordAndSecurityPage />;
             case SettingsTab.CONFIGURATIONS:
                 return <div>Configurations Settings Component</div>;
             default:
